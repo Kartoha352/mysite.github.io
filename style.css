@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+header{
+    padding: 30px;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.line1, .line2, .line3 {
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: rgb(175,0,122);
+    background: radial-gradient(circle, rgba(175,0,122,1) 0%, rgba(176,178,227,1) 51%, rgba(194,0,167,1) 100%);
+    border-radius: 25px;
+}
+
+.line_container{
+    margin-right: 45px;
+    margin-top: 10px;
+}
+
+header img{
+    margin-right: 45px;
+    margin-top: -10px;
+}
+
+.p{
+    width: 40%;
+}
+
+.link{
+    background: rgb(4,33,195);
+    background: radial-gradient(circle, rgba(4,33,195,1) 60%, rgba(131,0,93,1) 100%);
+    font-size: 16px;
+    padding: 15px 60px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.button{
+    display: flex;
+    align-items:start;
+}
+
+/* .container{
+    padding-left: 100px;
+    padding-top: 80px;
+} */
+
+/* main {
+    background-image: url('/images/anime_1/background_image.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+} */
+
+
+
+
+.burger{
+    background: rgb(4,33,195);
+    background: radial-gradient(circle,rgba(4,33,195,1) 30%, rgba(131,0,93,1) 90%);
+    height: 100vh;
+    top: 0;
+    left: -50%;
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+    transition: transform 1s ease;
+    z-index: 1;
+}
+
+.burger img{
+    margin-bottom: 100px;
+    margin-left: 80px;
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+}
+
+.burger a{
+    margin-bottom: 30px;
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.burger a:hover{
+    color: black;
+    border: 3px solid rgb(0, 0, 0);
+    background-color:  rgb(255, 255, 255);
+}
+
+.icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('images/burger.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+input{
+    display: none;
+}
+
+input:checked~label{
+    background-image: url('images/cross.svg');
+    background-size: 35px 40px;
+}
+
+input:checked~.burger{
+    display: flex;
+    transform: translateX(100%);
+    
+} 
+
+
+.container_1, .container_2, .container_3{
+    height: 85vh;
+}
+
+.container_1{ 
+    background-image: url("images/anime_1/background_image_2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -1;
+}
+
+.container_2{
+    background-image: url("images/anime_2/background_image_1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -1;
+}
+
+.container_3{
+    background-image: url("images/anime_3/background_image_1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -1;
+}
+
+h1{
+    padding-top: 80px;
+}
+
+p, h1, .button{
+    margin-left: 40px;
+}
+
+.bx-wrapper{
+    width: 100%; 
+    height: 500px !important;
+    background-color: black;
+    border: none;
+    box-shadow: none;
+}
+
+
+
+@media (max-width: 1390px){
+    .container_1{ 
+        background-image: url("images/anime_1/background_image_2.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+@media (max-width: 1250px){
+    .container_1{ 
+        background-image: url("images/anime_1/background_image_3.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+    .container_2{
+        background-image: url("images/anime_2/background_image_1.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+    .container_3{
+        background-image: url("images/anime_3/background_image_2.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    h1 img{
+        height: 90px;
+    }
+
+
+    .container_1, .container_2, .container_3{
+        padding-top: 70px;
+        padding-left: 80px;
+        height: 75vh;
+    }
+
+    header{
+        padding-left: 80px;
+    }
+
+}
+
+@media (max-width: 1047px){
+    .container_1{ 
+        background-image: url("images/anime_1/background_image_4.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+    .container_2{
+        background-image: url("images/anime_2/background_image_2.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+    .container_3{
+        background-image: url("images/anime_3/background_image_3.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .p{
+        width: 40%;
+        font-size: 13px;
+    }
+
+    .container_1, .container_2, .container_3{
+        padding-top: 30px;
+        padding-left: 50px;
+        height: 80vh;
+    }
+
+    h1{
+        padding-top: 50px;
+    }
+
+    header{
+        padding-left: 50px;
+    }
+
+    h1 img{
+        height: 70px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .container_1{ 
+        background-image: url("images/anime_1/background_image_5.png");
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+    
+    .container_2{
+        background-image: url("images/anime_2/background_image_3.png");
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+    
+    .container_3{
+        background-image: url("images/anime_3/background_image_4.png");
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    .p{
+        width: 40%;
+        font-size: 10px;
+    }
+    .container_1, .container_2, .container_3{
+        padding-top: 20px;
+        padding-left: 20px;
+        height: 80vh;
+    }
+
+    header{
+        padding-left: 30px;
+    }
+
+    h1{
+        padding-top: 80px;
+    }
+
+
+    h1 img{
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px){
+    .container_1{ 
+        background-image: url("images/anime_1/background_image_5.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    
+    .container_2{
+        background-image: url("images/anime_2/background_image_3.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    
+    .container_3{
+        background-image: url("images/anime_3/background_image_4.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    .p, h1, .button{
+        padding-left: 10px;
+    }
+
+    .p{
+        width: 80%;
+        font-size: 12px;
+    }
+    .container_1, .container_2, .container_3{
+        padding-top: 200px;
+        height: 60vh;
+    }
+
+    header{
+        padding-left: 30px;
+        justify-content: space-between;
+    }
+
+    .icon{
+        display: inline-block;
+    }
+
+    h1 img{
+        height: 55px;
+        padding-left: 50px;
+    }
+
+    .button{
+        padding-left: 90px;
+    }    
+
+    .container_3 h1 img{
+        height: 105px;
+    }
+
+    .line_container{
+        display: none;
+    }
+
+}
